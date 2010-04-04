@@ -1,0 +1,21 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>Watch it grow</title>
+	<link rel="stylesheet" type="text/css" href="client.css" />
+	<script src="jquery-1.2.6.min.js" type="text/javascript"></script>
+	<script type="text/javascript" src="client.js"></script>
+</head>
+
+<body">
+	<h3>Add json for tree in the textbox, press ENTER and watch the tree grow!!</h3>
+        <p>For example: [{tag:"n1"},{tag:"n2",parent:"n1"},{tag:"n3",parent:"n2"},{tag:"n9",parent:"n3"},{tag:"n10",parent:"n3"},{tag:"n11",parent:"n9"},{tag:"n4",parent:"n1"}]
+</p>
+	<div>	
+		<input type="text" id="message" class="message" size=400 maxlength=400/>
+	</div>	
+	<canvas id="v3map" width="3138" height="2184"></canvas>
+	<div id="preview"></div>
+</body>
+</html>
