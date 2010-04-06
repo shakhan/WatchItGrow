@@ -9,11 +9,25 @@
 </head>
 
 <body">
-	<h3>Add json for tree in the textbox, press ENTER and watch the tree grow!!</h3>
-        <p>For example: [{tag:"n1"},{tag:"n2",parent:"n1"},{tag:"n3",parent:"n2"},{tag:"n9",parent:"n3"},{tag:"n10",parent:"n3"},{tag:"n11",parent:"n9"},{tag:"n4",parent:"n1"}]
-</p>
+
+<h3>Input a tree definition json & press Go!</h3>
+<pre>
+ like [
+        {tag:"n1"},
+        {tag:"n2",parent:"n1"},
+        {tag:"n3",parent:"n2"},
+        {tag:"n10",parent:"n3"},
+        {tag:"n11",parent:"n10"},
+        {tag:"n4",parent:"n1"}
+      ]
+</pre>
+
 	<div>	
-		<input type="text" id="message" class="message" size=400 maxlength=400/>
+		<textarea id="message" class="message" ROWS="10"></textarea>
+                <div class="buttons">
+		    <input type="button" id="go" value="Go"/>
+		    <input type="button" id="cancel" value="Cancel"/>
+                </div>	
 	</div>	
 	<canvas id="v3map" width="3138" height="2184"></canvas>
 	<div id="preview"></div>

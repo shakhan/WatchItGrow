@@ -45,6 +45,7 @@ var _tree = [
 
 /* Initialize */
 function init() {
+    _tree = [];
     coordStore = [];
     var ctx = canvas.getContext('2d');
     ctx.clearRect(0, 0, canvas.width, canvas.height);
@@ -290,14 +291,21 @@ SHAPES.tree = function() {
    On window load...
 */
 $(window).load(function() {
-    $("#message").keypress( function(e) {
-        if (e.keyCode != 13) return;
+
+    $("#cancel").click( function(e) {
+        $("#message").val("");
+        init();
+        SHAPES.grid.draw(1);
+    });
+
+    $("#go").click( function(e) {
         init();
         var message = $("#message").attr("value").replace("\n", "");
         _tree = eval(message);
         SHAPES.grid.draw(1);
         SHAPES.tree.draw();
     });
+
     fireOnLoad();
 });
 

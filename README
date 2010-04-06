@@ -5,9 +5,20 @@ This is a basic canvas demo app.
 Initial setup
 
 - Install WatchItGrow
+
   - In your terminal
       git clone git://github.com/shakhan/WatchItGrow
+
   - In your web browser
       - Open file://localhost/..../WatchItGrow/index.html 
-      - Enter a JSON for the tree like : [{tag:"n1"},{tag:"n2",parent:"n1"},{tag:"n3",parent:"n2"},{tag:"n9",parent:"n3"},{tag:"n10",parent:"n3"},{tag:"n11",parent:"n9"},{tag:"n4",parent:"n1"}]
-      - Press ENTER and watch the tree come to life!
+      - Enter a tree definition JSON like : 
+          [
+            {tag:"n1"},
+            {tag:"n2",parent:"n1"},
+            {tag:"n3",parent:"n2"},
+            {tag:"n9",parent:"n3"},
+            {tag:"n10",parent:"n3"},
+            {tag:"n11",parent:"n9"},
+            {tag:"n4",parent:"n1"}
+          ]
+      - Press Go and watch the tree come to life!

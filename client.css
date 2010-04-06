@@ -1,6 +1,7 @@
 body {
     margin:0px;
     padding:0px;
+    font-family:'Lucida Sans Unicode', 'Lucida Grande';
 }
 
 p, h3 {
@@ -34,4 +35,10 @@ div#preview {
         font-size:15px;
         -webkit-box-shadow: 1px 1px 4px rgba(0,0,0,0.3);
         -webkit-border-radius: 6px;
+}
+
+.buttons {
+	padding-left:10px;
+	padding-top:20px;
+        position:relative;
 }
